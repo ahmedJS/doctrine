@@ -6,15 +6,13 @@
 
 
     // require my entity
-    
-    require_once "src/DiscountItems.php";
 
     
     $isDevMode = true;
     $proxyDir  = null;
     $cache = null;
     $useSimpleAnnotationReader = false;
-    $config = Setup::createXMLMetadataConfiguration(array(__DIR__."/config/xml"),$isDevMode,$proxyDir,$cache,$useSimpleAnnotationReader);
+    $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"),$isDevMode,$proxyDir,$cache,$useSimpleAnnotationReader);
 
     // $conn = array(
     //     "driver" => "pdo_mysql",

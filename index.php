@@ -1,8 +1,6 @@
 <?php
-
 require_once "bootstrap.php";
 
-$new_discount = new DiscountItems;
 
 $new_discount->set_active_state("activated")
             ->set_discount_ratue("100")
